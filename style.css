@@ -1,0 +1,116 @@
+/* Page Background */
+body {
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #111, #222);
+  font-family: Arial, sans-serif;
+}
+
+/* Score Display */
+#score {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+/* Game Area */
+#gameArea {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  margin: auto;
+  background: #444;
+  overflow: hidden;
+  border: 5px solid white;
+  box-shadow: 0 0 20px black;
+}
+
+/* Road Lines */
+.roadLine {
+  position: absolute;
+  width: 10px;
+  height: 100px;
+  background: white;
+  left: 195px;
+  border-radius: 5px;
+}
+
+/* ===================== */
+/* 🚗 PLAYER CAR */
+/* ===================== */
+
+.car {
+  position: absolute;
+  width: 60px;
+  height: 110px;
+  bottom: 20px;
+  left: 170px;
+  background: linear-gradient(to bottom, #ff2a2a, #b30000);
+  border-radius: 12px;
+  box-shadow:
+    0 0 10px black,
+    inset 0 -5px 10px rgba(0,0,0,0.4);
+}
+
+/* Roof */
+.roof {
+  position: absolute;
+  width: 40px;
+  height: 50px;
+  background: linear-gradient(to bottom, #990000, #660000);
+  top: 15px;
+  left: 10px;
+  border-radius: 8px;
+}
+
+/* Windows */
+.window {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  background: linear-gradient(to bottom, #87cefa, #4682b4);
+  left: 15px;
+  border-radius: 4px;
+}
+
+.window.front {
+  top: 20px;
+}
+
+.window.back {
+  top: 45px;
+}
+
+/* Wheels */
+.wheel {
+  position: absolute;
+  width: 12px;
+  height: 25px;
+  background: black;
+  border-radius: 4px;
+}
+
+.wheel.left {
+  left: -6px;
+  top: 20px;
+}
+
+.wheel.right {
+  right: -6px;
+  top: 20px;
+}
+
+/* ===================== */
+/* 🚙 ENEMY CAR */
+/* ===================== */
+
+.enemy {
+  position: absolute;
+  width: 60px;
+  height: 110px;
+  background: linear-gradient(to bottom, #1e90ff, #003366);
+  border-radius: 12px;
+  box-shadow: 0 0 10px black;
+}
